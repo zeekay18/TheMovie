@@ -1,4 +1,4 @@
-package com.zeeice.themovie;
+package com.zeeice.themovie.ui.Listner;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -12,10 +12,11 @@ import android.view.View;
 public class MyRecyclerItemClickListener implements
         RecyclerView.OnItemTouchListener{
 
-    public static interface OnItemClickListener
+    public interface OnItemClickListener
     {
-        public void onItemClick(View view, int position);
-        public void onItemLongClick(View view, int position);
+        void onItemClick(View view, int position);
+
+        void onItemLongClick(View view, int position);
     }
 
     private OnItemClickListener mListener;

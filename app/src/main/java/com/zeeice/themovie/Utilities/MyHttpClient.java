@@ -1,14 +1,9 @@
 package com.zeeice.themovie.Utilities;
 
-import com.zeeice.themovie.Model.Movie;
+import com.zeeice.themovie.Data.Model.Movie;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import okhttp3.ResponseBody;
-import retrofit2.Call;
+import io.reactivex.Observable;
 import retrofit2.http.GET;
-import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 /**
@@ -17,8 +12,8 @@ import retrofit2.http.Query;
 public interface MyHttpClient {
 
     @GET("/3/movie/popular")
-    Call<Movie.SearchResult> getPopularMovies(@Query(value = "api_key") String query);
+    Observable<Movie.SearchResult> getPopularMovies(@Query(value = "api_key") String query);
 
     @GET("/3/movie/top_rated")
-    Call<Movie.SearchResult> getTopRatedMovies(@Query(value = "api_key")String query);
+    Observable<Movie.SearchResult> getTopRatedMovies(@Query(value = "api_key") String query);
 }

@@ -3,4 +3,16 @@
     <string name="sort">Sort by</string>
     <string name="popular">popular</string>
     <string name="top_rated">top rated</string>
+    <string name="error_message">Failed to get Movies!</string>
+
+    <string name="movie_details_trailer_desc">Play the trailer</string>
+    <string name="movie_details_rating">Average rating: %1$s</string>
+    <string name="movie_details_release_date">Date released: %s</string>
+    <string name="movie_item_btn_favorite_desc">save to favorites</string>
+
+
+    <string name="placeholder_movie_plot">Twenty-two years after the events of Jurassic Park, Isla Nublar now features a fully functioning dinosaur theme park, Jurassic World, as originally envisioned by John Hammond.
+        Twenty-two years after the events of Jurassic Park, Isla Nublar now features a fully functioning dinosaur theme park, Jurassic World, as originally envisioned by John Hammond.
+    </string>
+    <string name="favorite">favorite</string>
 </resources>

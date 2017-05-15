@@ -5,4 +5,14 @@
     <color name="textPrimary">#ffffff</color>
     <color name="colorAccent">#94550d</color>
     <color name="text_secondary">#727272</color>
+
+
+    <color name="app_bg">#250000</color>
+
+    <array name="swipe_progress_colors">
+        <item>@color/material_blue500</item>
+        <item>@color/material_red500</item>
+    </array>
+
+    <color name="list_dropdown_divider_color">#92a3a3a3</color>
 </resources>

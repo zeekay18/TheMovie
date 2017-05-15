@@ -1,7 +1,6 @@
-package com.zeeice.themovie.Adapter;
+package com.zeeice.themovie.ui.Adapter;
 
 import android.content.Context;
-import android.support.v7.widget.PagerSnapHelper;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,10 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
-import com.zeeice.themovie.Model.Movie;
+import com.zeeice.themovie.Data.Model.Movie;
 import com.zeeice.themovie.R;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Oriaje on 12/04/2017.
@@ -22,7 +21,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
 
 
     private Context mContext;
-    private ArrayList<Movie> mMovies;
+    private List<Movie> mMovies;
 
     public MovieListAdapter(Context mContext)
     {
@@ -55,7 +54,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
         return this.mMovies.size();
     }
 
-    public void swapDataset(ArrayList<Movie>movies)
+    public void swapDataset(List<Movie> movies)
     {
         if(movies == null)
             return;
